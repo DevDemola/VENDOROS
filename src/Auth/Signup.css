@@ -5,22 +5,20 @@
    ========================================================================== */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap");
 
-/* ==========================================================================
-   Root Variables
-   ========================================================================== */
+
 :root {
-  /* Colors - New Palette */
+ 
   --color-background: #f9fafb;
   --color-surface: #ffffff;
   --color-surface-hover: #f9fafb;
 
-  /* Primary Accent - Emerald Green */
+ 
   --color-primary: #10b981;
   --color-primary-light: #d1fae5;
   --color-primary-dark: #059669;
   --color-primary-soft: #ecfdf5;
 
-  /* Status Colors */
+
   --color-success: #10b981;
   --color-success-light: #d1fae5;
   --color-success-dark: #059669;
@@ -80,14 +78,6 @@
   --transition-base: 300ms ease;
 }
 
-/* ==========================================================================
-   Reset & Base Styles
-   ========================================================================== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: var(--font-family);
@@ -97,16 +87,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ==========================================================================
-   Signup Page Layout
-   ========================================================================== */
+
 .signup-page {
   min-height: 100vh;
   background: var(--color-background);
   position: relative;
 }
 
-/* Background Pattern */
+
 .signup-bg {
   position: fixed;
   top: 0;
@@ -144,9 +132,7 @@ body {
   }
 }
 
-/* ==========================================================================
-   Brand Side (Left)
-   ========================================================================== */
+
 .signup-brand {
   background: linear-gradient(135deg, #10b981, #059669);
   padding: 3rem;

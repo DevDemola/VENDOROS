@@ -395,17 +395,7 @@ const LandingPage = () => {
               <p>
                 Create orders in seconds. No more digging through chat history.
               </p>
-              <ul className="feature-list">
-                <li>
-                  <FiCheck /> Create orders in under 30 seconds
-                </li>
-                <li>
-                  <FiCheck /> Automatic customer profiles
-                </li>
-                <li>
-                  <FiCheck /> Order history at your fingertips
-                </li>
-              </ul>
+             
             </div>
 
             <div className="feature-main">
@@ -414,17 +404,7 @@ const LandingPage = () => {
               </div>
               <h3>Monitor Customer Debts</h3>
               <p>See exactly who owes you and how much.</p>
-              <ul className="feature-list">
-                <li>
-                  <FiCheck /> Real-time debt tracking
-                </li>
-                <li>
-                  <FiCheck /> Automatic payment reminders
-                </li>
-                <li>
-                  <FiCheck /> Payment status dashboard
-                </li>
-              </ul>
+              
             </div>
 
             <div className="feature-main">
@@ -433,17 +413,7 @@ const LandingPage = () => {
               </div>
               <h3>Auto-Update Inventory</h3>
               <p>Stock updates automatically after every sale.</p>
-              <ul className="feature-list">
-                <li>
-                  <FiCheck /> Low stock alerts
-                </li>
-                <li>
-                  <FiCheck /> Bulk product upload
-                </li>
-                <li>
-                  <FiCheck /> Restock predictions
-                </li>
-              </ul>
+             
             </div>
           </div>
         </div>
