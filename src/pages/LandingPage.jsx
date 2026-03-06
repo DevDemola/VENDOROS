@@ -220,7 +220,7 @@ const OrderItem = ({ customer, item, amount, status, icon }) => {
 // Navigation Component
 const Navigation = ({ scrolled }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  const navigate = useNavigate();
   return (
     <nav className={`nav ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-container">
@@ -240,21 +240,14 @@ const Navigation = ({ scrolled }) => {
           <a href="#testimonials">Reviews</a>
         </div>
 
-        <div className="nav-actions">
+        <div>
           <Button
             variant="primary"
             size="medium"
             onClick={() => navigate("/signup")}
           >
-            Start Free Trial
+            SignUp
           </Button>
-          <button
-            className="mobile-menu-btn"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? <FiX /> : <FiMenu />}
-          </button>
         </div>
       </div>
     </nav>
@@ -395,7 +388,6 @@ const LandingPage = () => {
               <p>
                 Create orders in seconds. No more digging through chat history.
               </p>
-             
             </div>
 
             <div className="feature-main">
@@ -404,7 +396,6 @@ const LandingPage = () => {
               </div>
               <h3>Monitor Customer Debts</h3>
               <p>See exactly who owes you and how much.</p>
-              
             </div>
 
             <div className="feature-main">
@@ -413,7 +404,6 @@ const LandingPage = () => {
               </div>
               <h3>Auto-Update Inventory</h3>
               <p>Stock updates automatically after every sale.</p>
-             
             </div>
           </div>
         </div>
