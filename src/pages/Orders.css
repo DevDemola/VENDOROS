@@ -1,0 +1,75 @@
+/* PAGE TITLE */
+
+.orders-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+/* TABLE CONTAINER */
+
+.orders-table-container {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+/* TABLE */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* HEADER */
+
+thead {
+  background: #f9fafb;
+}
+
+th {
+  text-align: left;
+  padding: 16px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* ROW */
+
+td {
+  padding: 16px;
+  border-top: 1px solid #f1f5f9;
+  font-size: 14px;
+}
+
+/* HOVER */
+
+tbody tr:hover {
+  background: #f9fafb;
+}
+
+/* STATUS BADGES */
+
+.status {
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status.completed {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.status.pending {
+  background: #fffbeb;
+  color: #d97706;
+}
+
+.status.cancelled {
+  background: #fef2f2;
+  color: #dc2626;
+}

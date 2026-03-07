@@ -6,6 +6,11 @@ import Signup from "./Auth/Signup";
 import Login from "./Auth/Login";
 import ForgotPassword from "./Auth/ForgotPassword";
 
+import Dashboard from "./pages/DashboardPage";
+import Orders from "./pages/Orders";
+import Products from "./pages/Products";
+import Customer from "./pages/Customer";
+
 function App() {
   return (
     // <Router>
@@ -14,6 +19,11 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
+
+         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/orders" element={<Orders />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/customer" element={<Customer />} />
       </Routes>
     // </Router>
   );

@@ -1,0 +1,248 @@
+/* Dashboard.css */
+
+/* Header Actions */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.dashboard-header .button-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dashboard-header button {
+  padding: 0.5rem 1rem;
+  background: white;
+  border: 1px solid #edf2f7;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #475569;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.dashboard-header button:hover {
+  border-color: #10b981;
+}
+
+.dashboard-header .export-button {
+  padding: 0.5rem 1.5rem;
+  background: #10b981;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dashboard-header .export-button:hover {
+  background: #059669;
+}
+
+/* Main Grid */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+/* Panels */
+.panel {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid #edf2f7;
+  margin-bottom: 1.5rem;
+}
+
+.panel h3 {
+  color: #1e293b;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Stats Card */
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid #edf2f7;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+  border-color: #10b981;
+}
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: #10b981;
+  background: #f0fdf4;
+}
+
+/* Quick Actions */
+.quick-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.quick-action {
+  padding: 1rem;
+  background: #f8fafc;
+  border: 1px solid #edf2f7;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quick-action:hover {
+  background: #f0fdf4;
+  border-color: #10b981;
+}
+
+.quick-action .icon {
+  font-size: 1.25rem;
+  color: #10b981;
+}
+
+.quick-action .label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #475569;
+}
+
+/* List Items */
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.list-item .avatar {
+  width: 36px;
+  height: 36px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #475569;
+  font-size: 0.875rem;
+}
+
+.list-item .details {
+  flex: 1;
+  margin-left: 0.75rem;
+}
+
+.list-item .details .name {
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 0.875rem;
+}
+
+.list-item .details .info {
+  color: #64748b;
+  font-size: 0.75rem;
+}
+
+/* Status badges */
+.status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.status.paid .status-dot {
+  background: #10b981;
+}
+.status.paid .status-text {
+  color: #10b981;
+}
+
+.status.unpaid .status-dot {
+  background: #ef4444;
+}
+.status.unpaid .status-text {
+  color: #ef4444;
+}
+
+.status.pending .status-dot {
+  background: #f59e0b;
+}
+.status.pending .status-text {
+  color: #f59e0b;
+}
+
+/* Spinner */
+.loading-overlay {
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background: rgba(255,255,255,0.8);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #f1f5f9;
+  border-top-color: #10b981;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
