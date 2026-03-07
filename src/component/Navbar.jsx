@@ -13,7 +13,7 @@ import {
   FiLogOut,
   FiChevronDown,
 } from "react-icons/fi";
-import "./navbar.css";
+import "./Navbar.css";
 
 const Navbar = ({ toggleSidebar, pageTitle = "Dashboard" }) => {
   const [showDropdown, setShowDropdown] = useState(false);
