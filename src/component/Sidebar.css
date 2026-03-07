@@ -9,66 +9,7 @@
 .sidebar-link.active {
   box-shadow: inset 4px 0 0 0 #10b981;
 }
-/* sidebar.css */
 
-/* HAMBURGER BUTTON */
-.hamburger {
-  display: none;
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  background: #10b981;
-  border: none;
-  color: white;
-  padding: 0.5rem;
-  border-radius: 8px;
-  cursor: pointer;
-  z-index: 1100;
-}
-
-/* MOBILE STYLES */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: -240px; /* hidden by default */
-    height: 100vh;
-    width: 240px;
-    background: white;
-    border-right: 1px solid #edf2f7;
-    padding: 1.5rem 1rem;
-    display: flex;
-    flex-direction: column;
-    transition: left 0.3s ease;
-    z-index: 1050;
-  }
-
-  .sidebar.collapsed {
-    left: 0; /* visible when collapsed */
-  }
-
-  .sidebar-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1040;
-    display: none;
-    transition: opacity 0.3s ease;
-  }
-
-  .sidebar-overlay.active {
-    display: block;
-  }
-}
-
-/* REST OF YOUR EXISTING SIDEBAR STYLES REMAIN SAME */
 /* Hover on badge for interactivity */
 .sidebar-badge:hover {
   background: #e0f2fe; /* subtle blue tint */
@@ -77,9 +18,7 @@
 
 /* Mobile: slide in/out sidebar smoother */
 .sidebar {
-  transition:
-    left 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: left 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Overlay fade-in effect */
@@ -96,7 +35,7 @@
 }
 
 .sidebar-user:hover {
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 /* Slight bounce effect on logo hover */
@@ -123,10 +62,6 @@
 
 /* Keyframes for overlay fade-in */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
